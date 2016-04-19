@@ -47,9 +47,12 @@ color: #BE90D4;
 	justify-content: center;
 }
 
+/* 
 .videopara { 
-	top: 0;
+	/* top: 0; */
+/* 
 }
+ */
 
 .container {
   width: 100%;
@@ -99,14 +102,56 @@ position: relative;
 
 .container3 {
   width: 100%;
-  height: 100vh;
-  background-color: white;
+  height: 150vh;
+  background-color: #F2F2F2;
   position: relative;
   overflow: hidden;
   z-index:100;
   
 }
 
+.container3 img { 
+	width: 60%;
+	height: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.container3 h3 { 
+	font-size: 5em;
+	font-family: 'Roboto';
+/* 	margin: 60px; */
+	margin-top: 60px;
+/* 	margin-bottom: 50px; */
+	color: #808590;
+}
+
+
+.container4 {
+  width: 100%;
+  height: 150vh;
+  background-color: #F2F2F2;
+  position: relative;
+  overflow: hidden;
+  z-index:100;
+}
+
+.container4 h3 { 
+	font-size: 5em;
+	font-family: 'Roboto';
+/* 	margin: 60px; */
+	margin-top: 40px;
+/* 	margin-bottom: 50px; */
+	color: #808590;
+}
+
+
+.container4 img { 
+	width: 60%;
+	height: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
 
 .rotate {
   position: absolute;
@@ -135,6 +180,17 @@ position: relative;
   z-index: 100;
 }
 
+.para h4 { 
+	font-size: 1.5em;
+	font-family: 'Roboto';
+	margin-top: 20px;
+}
+
+.para { 
+	width: 50%; 
+	height: auto;
+}
+
 
 
 /* rotateY(180deg) rotateX(180deg) */
@@ -142,6 +198,12 @@ position: relative;
 .videoOV { 
 	top: 100%;
 	-webkit-transform: rotate(5deg) translate(-50%, -50%);
+ 
+}
+
+.videoOV2 { 
+	top: 100%;
+	-webkit-transform: rotate(-5deg) translate(-50%, -50%);
  
 }
 
@@ -154,6 +216,11 @@ position: relative;
   -webkit-transform: translateZ(0) scale(1.0, 1.0);
  */
 
+}
+
+.r3 {
+  background-color: white;
+  z-index: 100;
 }
 
 
@@ -193,37 +260,13 @@ position: relative;
   }
 }
 
-/* 
-@media screen and (max-width: 768px) {
-
-  .container2 {
-  width: 100%;
-  height: 90vh;
-  background-color: black;
-  position: relative;
-  overflow: hidden;
-  
-}
-}
-
-@media screen and (max-width: 609px) {
-
-  .container2 {
-  width: 100%;
-  height: 85vh;
-  background-color: black;
-  position: relative;
-  overflow: hidden;
-  
-}
-}
 
 
 @media screen and (max-width: 544px) {
 
   .container2 {
   width: 100%;
-  height: 81vh;
+/*   height: 81vh; */
   background-color: black;
   position: relative;
   overflow: hidden;
@@ -236,7 +279,7 @@ position: relative;
 
   .container2 {
   width: 100%;
-  height: 75vh;
+/*   height: 75vh; */
   background-color: black;
   position: relative;
   overflow: hidden;
@@ -248,7 +291,7 @@ position: relative;
 
   .container2 {
   width: 100%;
-  height: 70vh;
+/*   height: 70vh; */
   background-color: black;
   position: relative;
   overflow: hidden;
@@ -260,33 +303,26 @@ position: relative;
 
   .container2 {
   width: 100%;
-  height: 65vh;
+/*   height: 65vh; */
   background-color: black;
   position: relative;
   overflow: hidden;
   
 }
 }
- */
 
-
-/* 
-@media screen and (max-width: 260px) {
-
-  .container2 {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  position: relative;
-  overflow: hidden;
-  
-}
-}
- */
-@media screen and (max-width: 710px) {
+@media screen and (min-width: 303px) {
 
 	.rotate { 
-	height: 350px;
+	height: 250px;
+	}
+}
+
+
+@media screen and (min-width: 0px) {
+
+	.rotate { 
+	height: 300px;
 	}
 }
 
@@ -307,11 +343,76 @@ position: relative;
 	
 	.container2 {
   		width: 100%;
-  		height: 70vh;
+/*   		height: 70vh; */
 	}
 	
 	.fullscreen { 
 		top: 0;
 	}
 }
+
+
+
+@media screen and (min-width: 0px) {
+
+	.container h1 { 
+		font-size: 2.5em;
+	}
+
+	.container h4 { 
+		font-size: 1em;
+		font-family: 'Roboto';
+	}
+
+	.container h3 { 
+		font-size: 2em;
+		font-family: 'Roboto';
+	}
+	
+	.container3 h3 { 
+		font-size: 2em;
+		font-family: 'Roboto';
+	}
+	
+	.container4 h3 { 
+		font-size: 2em;
+		font-family: 'Roboto';
+	}
+
+}
+
+
+@media screen and (min-width: 472px) {
+
+	.container h1 { 
+		font-size: 4em;
+	}
+
+	.container h4 { 
+		font-size: 2em;
+		font-family: 'Roboto';
+	}
+
+	.container h3 { 
+		font-size: 3em;
+		font-family: 'Roboto';
+	}
+	
+	.container3 h3 { 
+		font-size: 3em;
+		font-family: 'Roboto';
+	}
+	
+	.container4 h3 { 
+		font-size: 3em;
+		font-family: 'Roboto';
+	}
+
+}
+
+
+
+
+
+
 
