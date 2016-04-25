@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+</head>
+
+<body>
+
+<!-- 
+<div class="web-cam">
+  <video controls>
+    <source src="yo.mp4" type="video/mp4">
+    <source src="yo.ogg" type="video/ogg">
+  </video>
+</div>
+ -->
+
+<div class="container">
+     <video width="416" controls autoplay >
+         <source src="yo.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+         <source src="yo.mp4" type='video/ogg; codecs="theora, vorbis"' >
+     </video>
+</div>
+
+</body>
+
+</html>
+
+<style>
+
+
+#triangle {
+	width: 0;
+	height: 0;
+	border-top: 1000px solid transparent;
+	border-left: 500px solid red;
+	border-bottom: 1000px solid transparent;
+	background: url("yo.mp4") no-repeat center center;
+}
+
+/* 
+.web-cam { 
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+video {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  border-radius: 200px 200px 200px 200px;
+}
+ */
+
+.container {
+    width:240px;
+    height:240px;
+    overflow:hidden;
+    border-radius: 120px 120px 120px 120px;
+}
+</style>

@@ -7,19 +7,35 @@
  #menu { 
 	width: 100%; 
 	height: 100vh;
-	background-color: grey;
+	background-color: rgb(220, 219, 217);
 	display: none;
 	animation: fadein 2s;
+	overflow: hidden;
+	
+	/* background: url("andrewbackground.png") center center; */
+  	-webkit-background-size:cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 
 }
 
- #menu p { 
+#menu h3 { 
+	position: relative;
+	top: 90%;
+	text-align: center;
+}
+
+ #close { 
 	color: white;
+	display: flex;
 	font-family: 'Open Sans';
 	font-size: 6em;
 	cursor: pointer;
-	float: right;
-	padding: 80px;
+	padding: 30px;
+	position: absolute;
+	left: 85%;
+	
 }
 
 #contact h6:hover {
@@ -27,15 +43,75 @@
 }
 
 #contact { 
-	display: block;
+	
 	margin-top: 0;
+	position: absolute;
+	top: 50px;
+	left: 90%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	font-weight: 100;
+
+	
+}
+
+#wholesite { 
+	display: flex;
+}
+
+.aboutsection { 
+	
+	display: flex;
+  	font-family: 'Roboto';
+	width: 100%;
+  	align-content: space-between;
+  	align-items: center;
+  	flex-direction: row;
+  	/* margin-top: 5%; */
+  	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+  	height: 80vh;
+  	justify-content: center;
+	  
+}
+
+.description h1 { 
+	font-size: 2.5em;
+	padding-bottom: 20px;
+	font-weight: 500;
+	color: grey;
+}
+
+.description h2 { 
+	font-weight: 100;
+	color: grey;
+}
+
+.aboutsection img {
+	width: 40%; 
+	height: auto;
+	opacity: .8;
+
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+
+#descrip {
+	font-size: 1.5em;
+	width: 85%;	
+	height: auto;	
+	padding-right: 40px
 }
 
 #contact h6 { 
 	float: right;
 /* 	margin-top: 100%; */
 	font-family: 'Roboto';
-	color: #BE90D4;
+	color: gray;
 	font-size: 1.5em; 
 	padding: 30px;
 	display: block;
@@ -57,6 +133,8 @@
 .headvideo h1{ 
 	top: 100%;
 }
+
+
 
 .container h1 { 
 font-size: 6em;
@@ -85,12 +163,6 @@ color: #BE90D4;
 	justify-content: center;
 }
 
-/* 
-.videopara { 
-	/* top: 0; */
-/* 
-}
- */
 
 .container {
   width: 100%;
@@ -107,15 +179,31 @@ color: #BE90D4;
 .container2 {
   width: 100%;
   height: 150vh;
-  background-color:#47464A;
+  background-color:#81758F;
   position: relative;
   overflow: hidden;
-/* 
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(1.0, 1.0);
- */
 
+}
 
+#vidhead { 
+	display: flex; 
+	font-family: 'Roboto'; 
+	font-size: 3em; 
+	align-content: center;
+	padding-bottom: 50px;
+	font-weight: 100; 
+	color: white;
+}
+
+#viddesc { 
+	display: flex; 
+	font-family: 'Roboto'; 
+	font-size: 1.5em; 
+	align-content: center;
+	padding-top: 50px;
+	font-weight: 100; 
+	color: white;
+}
 
 #videoheading { 
 	-webkit-transform: rotate(-10deg) translate(50%, 50%);
@@ -123,10 +211,10 @@ color: #BE90D4;
 	font-color: blue;
 }
   
-}
 .fullscreen { 
-	width: 100%;
-	height: 50vh;
+	width: 80%;
+	height: auto;
+	opacity: .8;
 /*  	overflow: hidden; */
 /*  	z-index: -100; */
  	
@@ -140,16 +228,15 @@ color: #BE90D4;
   position: relative;
   overflow: hidden;
   z-index:100;
+  font-weight: 100;
   
 }
 
 .container3 img { 
 	width: 60%;
 	height: auto;
-	/* 
-margin-top: 50px;
+	margin-top: 50px;
 	margin-bottom: 50px;
- */
 }
 
 .container3 h3 { 
@@ -161,15 +248,19 @@ margin-top: 50px;
 	color: #808590;
 }
 
+#mobile { 
+	width: 30%;
+	height: 5%;
+}
 
 .container4 {
   width: 100%;
   height: 150vh;
   background-color: #818590;
-/*   background-color: white; */
   position: relative;
   overflow: hidden;
   z-index:100;
+  font-weight: 100;
 }
 
 .container4 h4 { 
@@ -254,7 +345,7 @@ margin-top: 50px;
 }
 
 .r2 {
-  background-color: black;
+  background-color:#81758F;
   z-index: 1000;
 
 }
@@ -272,8 +363,6 @@ margin-top: 50px;
 	/* background-color: black; */
 	
 }
-
-/* come out and rediscover what it means to be on the web with the graduates interactive multimedia */
 
 .center {
   display: flex;
@@ -315,17 +404,7 @@ margin-top: 50px;
 
 
 
-@media screen and (max-width: 544px) {
 
-  .container2 {
-  width: 100%;
-/*   height: 81vh; */
-  background-color: black;
-  position: relative;
-  overflow: hidden;
-  
-}
-}
 
 
 @media screen and (max-width: 484px) {
@@ -339,29 +418,9 @@ margin-top: 50px;
 }
 }
 
-@media screen and (max-width: 396px) {
 
-  .container2 {
-  width: 100%;
-/*   height: 70vh; */
-  background-color: white;
-  position: relative;
-  overflow: hidden;
-  
-}
-}
 
-@media screen and (max-width: 324px) {
 
-  .container2 {
-  width: 100%;
-/*   height: 65vh; */
-  background-color: white;
-  position: relative;
-  overflow: hidden;
-  
-}
-}
 
 @media screen and (min-width: 303px) {
 
@@ -393,8 +452,38 @@ margin-top: 50px;
 	
 	.container4 h4 { 
 		width: 50%;
-	}	
+	}
+	
+	#vidhead { 
+		font-size: 2em;
+		padding-top: 50px;
+	}
+	
+	#contact { 
+	
+	margin-top: 0;
+	position: absolute;
+	top: 50px;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	font-weight: 100;	
+		
+	}
+	
+		
 }
+
+@media screen and (min-width: 733px) {
+	#contact { 
+		left: 90%;
+	}
+}
+
+
+
+
+
 
 
 @media screen and (max-width: 650px) {
@@ -405,11 +494,30 @@ margin-top: 50px;
 		width: 100%;
 	}
 	
+	.container2 { 
+		height: 100vh;
+		width: 100%;
+	}
+	
+	.container3 { 
+		height: 100vh;
+		width: 100%;
+	}
+
+	
 	.para { 
-		margin-top: 20%;
+		margin-top: 30%;
 	}	
 	
+	/* 
+#mobile { 
 		
+		width: 25%
+		height: auto;
+	}
+ */
+		
+
 }
 
 @media screen and (max-width: 435px) {
