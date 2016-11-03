@@ -1,0 +1,127 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  height: 100%;
+  top: 0;
+}
+
+.andrewstill {
+
+display: flex;
+flex-wrap: wrap; 
+flexdirection: row;
+
+}
+
+.andrewstill img { 
+	width: 33.333333%;
+}
+
+.nav { 
+	background-color: #252425;
+	display: flex;
+	height: 70px;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	font-family: 'Roboto';
+	flex-wrap: wrap;
+	margin-top: 45px;
+/* 	opacity: .9; */
+/* 	position: absolute; */
+	
+}
+
+.nav h2 { 
+	color: white;
+	font-weight:100;
+	padding: 80px;
+	font-size: 1em;
+	opacity: .7;
+}
+
+.workgrid { 
+	display: flex;
+	flex-wrap: wrap; 
+	flexdirection: row;
+}
+
+.workgrid img { 
+	width: 33.3333%;
+}
+
+
+
+
+/* 
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+p {
+  text-align: center;
+}
+
+h4{
+  text-align:center; 
+  line-height:80px;
+  font-weight:normal;
+
+}
+
+#content {
+  width: 100%;
+  list-style: none;
+  margin: 50px 0 30px 0;
+  padding: 0;
+}
+
+.box {
+  position: relative;
+  width: -webkit-calc(100% / 4);
+  width: calc(100% / 4);
+  float: left;
+  overflow: hidden;
+}
+
+.box img {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.hover {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-size: 22px;
+  color:#555555;
+}
+
+.hover:before {
+  content: '';
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.box:hover .hover {
+  opacity: 1;
+}
+
+
